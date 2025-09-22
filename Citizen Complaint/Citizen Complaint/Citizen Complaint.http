@@ -1,0 +1,6 @@
+@Citizen_Complaint_HostAddress = http://localhost:5194
+
+POST {{Citizen_Complaint_HostAddress}}/api/cpmplaint
+conten-type: application/json
+
+###

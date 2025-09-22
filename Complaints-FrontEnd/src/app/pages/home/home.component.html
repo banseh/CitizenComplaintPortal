@@ -1,0 +1,364 @@
+<div
+  class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-5"
+>
+  <div class="w-full lg:w-1/2 text-center lg:text-left lg:mt-0 lg:pl-30">
+    <h2 class="text-3xl sm:text-4xl font-bold text-blue-800 mb-4">𝐘𝐨𝐮𝐫𝐕𝐨𝐢𝐜𝐞</h2>
+    <p class="text-gray-600 text-base sm:text-lg mb-6">
+      Your voice matters. Report issues and help improve public services
+    </p>
+    <button
+      (click)="submitComplaint()"
+      class="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-5 py-2 rounded mr-3"
+    >
+      Submit Your Complaint
+    </button>
+    <button
+      (click)="showSearchPopup = true"
+      class="bg-blue-800 hover:bg-blue-900 text-white font-semibold px-7 py-2 rounded"
+    >
+      Search Your Ticket
+    </button>
+  </div>
+  <!-- ---------------------------------------- -->
+  <div
+    *ngIf="showSearchPopup"
+    class="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50"
+  >
+    <div
+      class="bg-white p-8 rounded-2xl shadow-xl w-[90%] max-w-lg transition-transform duration-300 scale-100"
+    >
+      <h2 class="text-2xl font-bold text-center text-blue-800 mb-6">
+        Search for Complaint
+      </h2>
+      <form
+        #searchForm="ngForm"
+        (ngSubmit)="onSearchSubmit(searchForm)"
+        class="space-y-5"
+      >
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Email <span class="text-red-500">*</span></label
+          >
+              <input
+          type="email"
+          name="email"
+          [(ngModel)]="searchData.email"
+          required
+          email
+          [disabled]="emailDisabled"
+          #emailRef="ngModel"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500
+                disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed"
+          placeholder="e.g. user@example.com"
+        />
+
+          <div
+            *ngIf="emailRef.invalid && emailRef.touched"
+            class="text-red-500 text-xs mt-1"
+          >
+            <div *ngIf="emailRef.errors?.['required']">Email is required.</div>
+            <div *ngIf="emailRef.errors?.['email']">Invalid email format.</div>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Ticket Number <span class="text-red-500">*</span></label
+          >
+          <input
+            type="text"
+            name="ticketNumber"
+            [(ngModel)]="searchData.ticketNumber"
+            required
+            #ticketRef="ngModel"
+            class="w-full px-4 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="e.g. TCK-123456"
+          />
+          <div
+            *ngIf="ticketRef.invalid && ticketRef.touched"
+            class="text-red-500 text-xs mt-1"
+          >
+            Ticket number is required.
+          </div>
+        </div>
+        <div class="flex justify-end gap-3 pt-4">
+          <button
+            type="submit"
+            [disabled]="searchForm.invalid || isLoading"
+            class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition flex items-center justify-center gap-2"
+          >
+            <span *ngIf="!isLoading">Search</span>
+            <span *ngIf="isLoading">
+              <svg
+                class="animate-spin h-5 w-5 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 000 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+          <button
+            type="button"
+            (click)="showSearchPopup = false"
+            class="bg-gray-300 text-gray-800 px-5 py-2 rounded-md hover:bg-gray-400 transition"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- --------------------------------------------------------------------------------------------------- -->
+  <div
+    *ngIf="showComplaintPopup && foundComplaint"
+    class="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
+  >
+    <div
+      class="bg-white p-8 rounded-2xl shadow-2xl w-[90%] max-w-2xl transition-transform duration-300 scale-100 border-t-8 border-blue-700"
+    >
+      <div class="flex items-center justify-center mb-6">
+        <h2 class="text-3xl font-extrabold text-blue-800 text-center">
+          Complaint Information
+        </h2>
+      </div>
+      <div class="flex items-center gap-2 text-lg">
+        <strong>Status:</strong>
+        <span
+          class="inline-block px-2 py-1 rounded-full text-white text-lg"
+          [ngClass]="{
+              'bg-yellow-600': status === 'New',
+              'bg-orange-500': status === 'Pending',
+              'bg-gray-600': status === 'In Progress',
+              'bg-green-600': status === 'Resolved',
+              'bg-red-600': status === 'Unknown'
+
+          }"
+        >
+          {{ status || "Unknown" }}
+        </span>
+      </div>
+      <div class="space-y-4 text-gray-800 text-lg">
+        <div class="flex items-center gap-2">
+          <strong>Title:</strong> {{ foundComplaint.name }}
+        </div>
+        <div class="flex items-center gap-2 text-lg">
+          <strong>Email:</strong> {{ foundComplaint.email }}
+        </div>
+        <div class="flex items-center gap-2 text-lg">
+          <strong>Location:</strong> {{ foundComplaint.location }}
+        </div>
+        <div class="flex items-center gap-2 text-lg">
+          <strong>National ID:</strong> {{ foundComplaint.nationalid }}
+        </div>
+        <div class="flex items-center gap-2 text-lg">
+          <strong>Ticket No.:</strong> {{ foundComplaint.ticketNumber }}
+        </div>
+        <div class="flex items-center gap-2 text-lg">
+          <strong>Category:</strong> {{ foundComplaint.categoryBinding }}
+        </div>
+        <div class="flex items-center gap-2 text-lg">
+          <strong>Description:</strong> {{ foundComplaint.description }}
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <button
+          (click)="closePopupAndResetForm()"
+          class="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-md transition"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Overlay  -->
+  <div
+    *ngIf="showNotFoundPopup"
+    class="fixed inset-0 backdrop-blur-sm bg-transparent flex items-center justify-center z-50"
+  >
+    <div class="bg-white w-200 p-6 rounded-xl shadow-xl text-center">
+      <h2 class="text-xl font-semibold text-red-600 mb-2">Sorry</h2>
+      <p class="text-gray-700">No Ticket found.</p>
+    </div>
+  </div>
+  <!-- ------------------------------------ -->
+  <div class="relative w-full lg:w-1/2 flex justify-center items-center mt-16">
+    <img
+      src="heroSectionImage.svg"
+      alt="Handshake"
+      class="w-full max-w-md z-10"
+    />
+    <img
+      src="heroSectionArrow.svg"
+      alt="Arrow"
+      class="hidden lg:block absolute -top-10 -left-14 w-72 h-72 rotate-[370deg]"
+    />
+  </div>
+</div>
+<section class="py-10 bg-blue-50 text-center">
+  <h2 class="text-2xl font-bold text-blue-900 mb-4">Why Use Our Platform</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-10 mb-8">
+    <div
+      class="bg-white rounded-md shadow-md p-3 border-t-6 border-blue-800 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+    >
+      <div class="flex items-center gap-2">
+        <div class="mb-2 rounded-full bg-blue-100">
+          <img class="w-15 h-15 p-2" src="fastResponse.svg" alt="" />
+        </div>
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Fast Response</h3>
+      </div>
+      <p class="text-gray-700 text-sm text-left">
+        Your complaints are reviewed and acted upon without delay.
+      </p>
+    </div>
+    <div
+      class="bg-white rounded-md shadow-md p-3 border-t-6 border-blue-800 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+    >
+      <div class="flex items-center gap-2">
+        <div class="mb-2 rounded-full bg-blue-100">
+          <img class="w-15 h-15 p-2" src="verified.svg" alt="" />
+        </div>
+        <h3 class="font-bold text-xl text-blue-800 mb-2">Verified Handling</h3>
+      </div>
+      <p class="text-gray-700 text-sm text-left">
+        Every complaint is managed by authorized government entities for
+        transparency and trust..
+      </p>
+    </div>
+    <div
+      class="bg-white rounded-md shadow-md p-3 border-t-6 border-blue-800 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+    >
+      <div class="flex items-center gap-2">
+        <div class="mb-2 rounded-full bg-blue-100">
+          <img class="w-15 h-15 p-2" src="Secure.svg" alt="" />
+        </div>
+        <h3 class="font-bold text-xl text-blue-800 mb-2">
+          Secure & Confidential
+        </h3>
+      </div>
+      <p class="text-gray-700 text-sm text-left">
+        Your personal data and complaints are protected with top-level security
+        protocols.
+      </p>
+    </div>
+    <div
+      class="bg-white rounded-md shadow-md p-3 border-t-6 border-blue-800 transform transition duration-300 hover:scale-105 hover:shadow-xl"
+    >
+      <div class="flex items-center gap-2">
+        <div class="mb-2 rounded-full bg-blue-100">
+          <img class="w-15 h-15 p-2" src="thousandsCitizen.svg" alt="" />
+        </div>
+        <h3 class="font-bold text-xl text-blue-800 mb-2">
+          Trusted by Thousands
+        </h3>
+      </div>
+      <p class="text-gray-700 text-sm text-left">
+        Join thousands of citizens who’ve already made their voices heard.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------- -->
+<section class="bg-white py-16 px-4 sm:px-8 lg:px-16">
+  <h2 class="text-center text-2xl sm:text-3xl font-bold text-blue-800 mb-12">
+    Why Thousands of People Trust Us
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+    <div class="flex flex-col items-center text-center">
+      <img
+        src="landing1.png"
+        alt="Handshake"
+        class="rounded-lg mb-4 h-[450px] object-cover w-[500px]"
+      />
+      <div class="bg-blue-50 p-4 rounded-lg w-[500px] h-35">
+        <h3 class="text-blue-800 font-bold mb-2">
+          10,000+ Complaints Resolved
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Thousands of citizens have seen real action taken after submitting
+          their complaints. We're committed to making things better.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <img
+        src="landing2.png"
+        alt="Center"
+        class="rounded-lg mb-4 h-[450px] object-cover w-[500px]"
+      />
+      <div class="bg-blue-50 p-4 rounded-lg w-[500px] h-35">
+        <h3 class="text-blue-800 font-bold mb-2">
+          Used by Citizens Across All Governorates
+        </h3>
+        <p class="text-gray-600 text-sm">
+          From urban centers to rural towns, citizens across Egypt trust our
+          platform to raise their voices and get support.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <div class="bg-blue-50 p-4 rounded-lg w-[500px] h-40">
+        <h3 class="text-blue-800 font-bold mb-2">
+          Verified Technical Response
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Each complaint is reviewed by trained experts who understand the issue
+          and act accordingly — not by bots or templates.
+        </p>
+      </div>
+      <img
+        src="landing3.png"
+        alt="Handshake"
+        class="rounded-lg h-[420px] object-cover w-[500px] mt-5"
+      />
+    </div>
+  </div>
+</section>
+<!---------------------------------------------- -->
+<div class="bg-blue-50 py-10">
+  <h2 class="text-2xl sm:text-3xl font-bold text-center text-blue-900 mb-10">
+    Most Common Issues Reported by Citizens
+  </h2>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 sm:px-16"
+  >
+    <div
+      *ngFor="let issue of issues"
+      class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col justify-between"
+    >
+      <img
+        [src]="issue.image"
+        alt="{{ issue.title }}"
+        class="w-full h-48 object-cover"
+      />
+      <div class="p-4 flex-1 flex flex-col justify-between">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2 text-center">
+          {{ issue.title }}
+        </h3>
+        <p class="text-gray-600 text-sm mb-4 text-center">
+          {{ issue.description }}
+        </p>
+        <div class="text-center mt-auto">
+          <button
+            class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 transition-all text-sm"
+            (click)="goToComplaintForm(issue.title)"
+          >
+            Submit Complaint
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

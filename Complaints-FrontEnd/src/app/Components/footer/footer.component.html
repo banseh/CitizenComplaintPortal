@@ -1,0 +1,263 @@
+<div
+  class="footer-container text-white p-6 md:p-10 xl:p-20"
+  style="background: #134995"
+>
+  <div
+    class="flex flex-col sm:flex-row justify-between items-center border-b border-white pb-8 gap-6"
+  >
+    <div>
+      <h3 class="text-3xl font-bold">Connect with us</h3>
+      <p class="mt-4">
+        We’re here to make your voice count — and your complaint matter.
+      </p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+      <button
+        (click)="submitComplaint()"
+        class="border bg-white px-6 py-2 rounded-xl font-semibold text-[#134995] cursor-pointer"
+      >
+        Submit Complaint
+      </button>
+      <button
+        (click)="About()"
+        class="text-white px-6 py-2 border border-white rounded-xl font-semibold cursor-pointer"
+      >
+        About
+      </button>
+    </div>
+  </div>
+  <div class="grid grid-cols-12 gap-6 w-full my-6">
+    <div class="col-span-12 md:col-span-4 flex flex-col">
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="30"
+          height="30"
+          x="0"
+          y="0"
+          viewBox="0 0 512 512"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              d="M261.456 108.05 235.39 81.984c-29.709-29.709-77.876-29.709-107.585 0l-90.523 91.442c-29.709 29.709-29.709 77.876 0 107.584l23.009 23.009M215.905 154.86 61.495 308.958c-12.851 12.85-12.851 33.685 0 46.535 12.85 12.85 33.685 12.85 46.536 0l117.45-117.451M328.728 320.94l-75.184 75.185c-12.85 12.85-12.85 33.685 0 46.535 12.851 12.85 33.685 12.85 46.536 0l174.64-174.64c29.709-29.709 29.709-77.876 0-107.584l-78.33-78.329c-29.709-29.709-77.876-29.709-107.584 0l-23.54 23.493"
+              style="stroke-miterlimit: 10"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="30px"
+              stroke-miterlimit="10"
+              data-original="#000000"
+            ></path>
+            <path
+              d="M277.531 279.065 167.863 388.734c-12.85 12.85-12.85 33.685 0 46.536 12.851 12.85 33.685 12.85 46.536 0l116.48-116.48"
+              style="stroke-miterlimit: 10"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="30px"
+              stroke-miterlimit="10"
+              data-original="#000000"
+            ></path>
+            <path
+              d="M226.13 237.395 114.679 348.846c-12.85 12.85-12.85 33.685 0 46.536 12.85 12.85 33.685 12.85 46.535 0l116.661-116.661M205.292 144.313l72.712 73.288c12.85 12.85 33.685 12.85 46.536 0 12.85-12.85 12.85-33.685 0-46.536l-83.478-83.478"
+              style="stroke-miterlimit: 10"
+              fill="none"
+              stroke="#FFFFFF"
+              stroke-width="30px"
+              stroke-miterlimit="10"
+              data-original="#000000"
+            ></path>
+          </g>
+        </svg>
+        <h3 class="font-bold text-xl">YourVoice</h3>
+      </div>
+      <p class="mt-6 mb-2">Subscribe to our newsletter for updates</p>
+    </div>
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 col-span-12 md:col-span-8 gap-6"
+    >
+      <div>
+        <h3 class="font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li *ngFor="let link of quickLinks">
+            <a [routerLink]="link.href" class="hover:underline">{{
+              link.title
+            }}</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Popular Categories</h3>
+        <ul class="space-y-2">
+          <li *ngFor="let category of popularCategories">
+            <div>{{ category.title }}</div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Contact Information</h3>
+        <ul class="space-y-2">
+          <li *ngFor="let item of contactInfo">
+            <a
+              [href]="item.href"
+              (click)="item.href === '#' && $event.preventDefault()"
+              [style.cursor]="item.href === '#' ? 'default' : 'pointer'"
+              class="hover:underline whitespace-pre-line"
+            >
+              {{ item.text }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-col-reverse sm:flex-row justify-between items-center mt-8 gap-6 text-sm"
+  >
+    <div class="flex flex-wrap gap-2 items-center">
+      <span>&copy; 2025</span>
+      <a routerLink="/">Your Voice</a> | <a routerLink="/">Privacy Policy</a> |
+      <a routerLink="/">Terms & Conditions</a> |
+      <a routerLink="/">Accessibility</a>
+    </div>
+    <div class="flex gap-4 text-white">
+      <a routerLink="/" title="Facebook" aria-label="Facebook">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="30"
+          height="30"
+          x="0"
+          y="0"
+          viewBox="0 0 512 512"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"
+              fill="#FFFFFF"
+              opacity="1"
+              data-original="#FFFFFF"
+            ></path>
+          </g>
+        </svg>
+      </a>
+      <a routerLink="/" title="LinkedIn" aria-label="LinkedIn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="30"
+          height="30"
+          x="0"
+          y="0"
+          viewBox="0 0 176 176"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              d="M152 0H24A24 24 0 0 0 0 24v128a24 24 0 0 0 24 24h128a24 24 0 0 0 24-24V24a24 24 0 0 0-24-24zM60 139.28a3.71 3.71 0 0 1-3.71 3.72H40.48a3.71 3.71 0 0 1-3.72-3.72V73a3.72 3.72 0 0 1 3.72-3.72h15.81A3.72 3.72 0 0 1 60 73zM48.38 63a15 15 0 1 1 15-15 15 15 0 0 1-15 15zm94.26 76.54a3.41 3.41 0 0 1-3.42 3.42h-17a3.41 3.41 0 0 1-3.42-3.42v-31.05c0-4.64 1.36-20.32-12.13-20.32-10.45 0-12.58 10.73-13 15.55v35.86A3.42 3.42 0 0 1 90.3 143H73.88a3.41 3.41 0 0 1-3.41-3.42V72.71a3.41 3.41 0 0 1 3.41-3.42H90.3a3.42 3.42 0 0 1 3.42 3.42v5.78c3.88-5.83 9.63-10.31 21.9-10.31 27.18 0 27 25.38 27 39.32z"
+              data-name="Layer 2"
+              fill="#ffffff"
+              opacity="1"
+              data-original="#ffffff"
+            ></path>
+          </g>
+        </svg>
+      </a>
+      <a routerLink="/" title="X" aria-label="X">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="30"
+          height="30"
+          x="0"
+          y="0"
+          viewBox="0 0 1227 1227"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+          class=""
+        >
+          <g>
+            <path
+              d="M654.53 592.55 930.65 987.5H817.33L592.01 665.22v-.02l-33.08-47.31-263.21-376.5h113.32l212.41 303.85z"
+              fill="#FFFFFF"
+              opacity="1"
+              data-original="#000000"
+              class=""
+            ></path>
+            <path
+              d="M1094.42 0H132.58C59.36 0 0 59.36 0 132.58v961.84C0 1167.64 59.36 1227 132.58 1227h961.84c73.22 0 132.58-59.36 132.58-132.58V132.58C1227 59.36 1167.64 0 1094.42 0zm-311.8 1040.52L554.61 708.68l-285.47 331.84h-73.78l326.49-379.5-326.49-475.17h249.02l215.91 314.23 270.32-314.23h73.78l-311.33 361.9h-.02l338.6 492.77z"
+              fill="#FFFFFF"
+              opacity="1"
+              data-original="#000000"
+              class=""
+            ></path>
+          </g>
+        </svg>
+      </a>
+      <a routerLink="/" title="Instagram" aria-label="Instagram">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="30"
+          height="30"
+          x="0"
+          y="0"
+          viewBox="0 0 512.6 512.6"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+          class=""
+        >
+          <g>
+            <path
+              d="M309.75 256c0 30.56-24.77 55.33-55.33 55.33s-55.33-24.77-55.33-55.33 24.77-55.34 55.33-55.34 55.33 24.78 55.33 55.34z"
+              fill="#FFFFFF"
+              opacity="1"
+              data-original="#000000"
+              class=""
+            ></path>
+            <path
+              d="M457.21 0H55.39C24.8 0 0 24.8 0 55.39v401.82c0 30.59 24.8 55.39 55.39 55.39h401.82c30.59 0 55.39-24.8 55.39-55.39V55.39C512.6 24.8 487.8 0 457.21 0zm-37.79 324.44c-.8 17.67-3.61 29.74-7.71 40.29-4.25 10.92-9.92 20.18-19.15 29.41-9.23 9.22-18.49 14.9-29.4 19.14-10.56 4.11-22.63 6.91-40.3 7.72-17.7.81-23.36 1-68.44 1s-50.74-.19-68.44-1c-17.67-.81-29.74-3.61-40.3-7.72-10.91-4.24-20.17-9.92-29.4-19.14-9.23-9.23-14.9-18.49-19.15-29.41-4.1-10.55-6.9-22.62-7.71-40.29-.81-17.71-1-23.36-1-68.44 0-45.09.19-50.74 1-68.44.81-17.67 3.61-29.74 7.71-40.3 4.25-10.91 9.92-20.17 19.15-29.4s18.49-14.91 29.4-19.15c10.56-4.1 22.63-6.91 40.3-7.71 17.7-.81 23.36-1 68.44-1s50.74.19 68.44 1c17.67.8 29.74 3.61 40.3 7.71 10.91 4.24 20.17 9.92 29.4 19.15s14.9 18.49 19.15 29.4c4.1 10.56 6.91 22.63 7.71 40.3.81 17.7 1 23.35 1 68.44 0 45.08-.19 50.73-1 68.44zM383.83 158.1c-3.01-7.75-6.61-13.28-12.42-19.09s-11.34-9.41-19.09-12.42c-5.85-2.27-14.64-4.98-30.82-5.71-17.51-.8-22.76-.97-67.08-.97s-49.57.17-67.08.97c-16.18.73-24.97 3.44-30.82 5.71-7.75 3.01-13.28 6.61-19.09 12.42s-9.41 11.34-12.42 19.09c-2.27 5.85-4.97 14.64-5.71 30.82-.8 17.5-.97 22.75-.97 67.08 0 44.32.17 49.57.97 67.08.74 16.18 3.44 24.97 5.71 30.82 3.01 7.75 6.61 13.28 12.42 19.09s11.34 9.4 19.09 12.41c5.85 2.28 14.64 4.98 30.82 5.72 17.5.8 22.75.97 67.08.97s49.58-.17 67.08-.97c16.18-.74 24.97-3.44 30.82-5.72 7.75-3.01 13.28-6.6 19.09-12.41s9.41-11.34 12.42-19.09c2.27-5.85 4.97-14.64 5.71-30.82.8-17.51.97-22.76.97-67.08 0-44.33-.17-49.58-.97-67.08-.74-16.18-3.44-24.97-5.71-30.82zM254.42 341.24c-47.08 0-85.24-38.16-85.24-85.24s38.16-85.25 85.24-85.25 85.24 38.17 85.24 85.25-38.16 85.24-85.24 85.24zm88.61-153.93c-11 0-19.92-8.92-19.92-19.92s8.92-19.92 19.92-19.92 19.92 8.92 19.92 19.92-8.92 19.92-19.92 19.92z"
+              fill="#FFFFFF"
+              opacity="1"
+              data-original="#000000"
+              class=""
+            ></path>
+          </g>
+        </svg>
+      </a>
+      <a routerLink="/" title="GitHub" aria-label="GitHub">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="30"
+          height="30"
+          x="0"
+          y="0"
+          viewBox="0 0 176 176"
+          style="enable-background: new 0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              d="M152 0H24A24 24 0 0 0 0 24v128a24 24 0 0 0 24 24h128a24 24 0 0 0 24-24V24a24 24 0 0 0-24-24zm-46.75 140.55c-2.82.54-3.78-1.16-3.78-2.57 0-1.76.07-7.57.07-14.8 0-5.07-1.79-8.38-3.71-10 12.23-1.33 25.09-5.9 25.09-26.66A20.71 20.71 0 0 0 117.28 72c.55-1.37 2.41-6.87-.55-14.31 0 0-4.6-1.45-15 5.54a52.85 52.85 0 0 0-27.5 0c-10.52-7-15.13-5.54-15.13-5.54-3 7.46-1.1 12.96-.53 14.31a20.64 20.64 0 0 0-5.66 14.5c0 20.7 12.84 25.35 25 26.7a11.45 11.45 0 0 0-3.48 7.23c-3.15 1.38-11.12 3.77-16-4.49 0 0-2.9-5.2-8.42-5.57 0 0-5.37-.07-.39 3.28 0 0 3.62 1.67 6.12 7.9 0 0 3.23 10.51 18.53 7.26 0 4.5.06 7.9.06 9.19s-1 3.1-3.75 2.59C48.76 133.47 33 113.22 33 89.34c0-29.85 24.61-54 55-54s55 24.2 55 54.05c0 23.79-15.74 44.06-37.75 51.16z"
+              data-name="Layer 2"
+              fill="#FFFFFF"
+              opacity="1"
+              data-original="#000000"
+            ></path>
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

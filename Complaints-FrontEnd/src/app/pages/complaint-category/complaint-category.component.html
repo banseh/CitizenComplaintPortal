@@ -1,0 +1,378 @@
+<div class="w-[100%] flex">
+  <div class="bg-withe hidden md:block md:w-[50%]">
+    <img
+      src="Group.png"
+      class="w-130 h-120 ml-[30%] mt-[15%] scale-x-[-1]"
+      alt="Group Image"
+    />
+  </div>
+  <div class="w-[100%] md:w-[40%] mt-5">
+    <form
+      #complaintForm="ngForm"
+      (ngSubmit)="submitComplaint(complaintForm)"
+      class="max-w-md mx-auto space-y-4 mt"
+    >
+      <h2 class="text-2xl font-bold text-[#134995] text-center mb-6">
+        Submit a New Complaint
+      </h2>
+      <div>
+        <label class="block mb-1 text-lg font-medium text-gray-700"
+          >Category <span class="text-red-500">*</span></label
+        >
+        <select
+          name="category"
+          [(ngModel)]="selectedCategoryId"
+          (change)="onCategoryChange()"
+          required
+          #categoryRef="ngModel"
+          [ngClass]="{
+            'text-gray-400': isPlaceholderSelected,
+            'text-black': !isPlaceholderSelected
+          }"
+          class="w-full px-3 py-2 border border-[#2570EB] rounded-md outline-none"
+        >
+          <option value="" disabled [selected]="!selectedCategoryId">
+            Select Category
+          </option>
+          <option
+            disabled
+            *ngFor="let c of categories"
+            [value]="c.categoryId"
+            [selected]="c.categoryId === selectedCategoryId"
+          >
+            {{ c.name }}
+          </option>
+        </select>
+        <div
+          *ngIf="categoryRef.invalid && complaintForm.submitted"
+          class="text-red-600 text-sm"
+        >
+          Category is required.
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block mb-1 text-lg font-medium text-gray-700"
+          >Title <span class="text-red-500">*</span></label
+        >
+        <span
+          class="absolute inset-y-0 left-0 pl-3 flex items-center"
+          [ngClass]="{
+            'mt-6': !(titleRef.invalid && complaintForm.submitted),
+            'mt-0': titleRef.invalid && complaintForm.submitted
+          }"
+        >
+          <svg
+            class="h-5 w-5 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+        </span>
+        <input
+          name="name"
+          [(ngModel)]="complaint.name"
+          required
+          maxlength="99"
+          #titleRef="ngModel"
+          class="w-full px-10 py-2 border border-[#2570EB] rounded-md outline-none placeholder-gray-400"
+          placeholder="Enter title"
+        />
+        <div
+          *ngIf="titleRef.invalid && complaintForm.submitted"
+          class="text-red-600 text-sm"
+        >
+          Title is required (max 100 chars).
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block mb-1 text-lg font-medium text-gray-700"
+          >Description <span class="text-red-500">*</span>
+        </label>
+        <span
+          class="absolute top-10 left-0 pl-3 flex items-start"
+          [ngClass]="{
+            'mt-2': !(titleRef.invalid && complaintForm.submitted),
+            'mt-3': titleRef.invalid && complaintForm.submitted
+          }"
+        >
+          <svg
+            class="h-5 w-5 text-gray-400 mt-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 20h9" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4h9M3 4h.01M3 20h.01M3 12h18"
+            />
+          </svg>
+        </span>
+        <textarea
+          name="description"
+          [(ngModel)]="complaint.description"
+          required
+          rows="4"
+          maxlength="99"
+          #descRef="ngModel"
+          class="w-full px-10 py-2 mt-4 border border-[#2570EB] rounded-md outline-none placeholder-gray-400"
+          placeholder="Enter description"
+        ></textarea>
+        <div
+          *ngIf="descRef.invalid && complaintForm.submitted"
+          class="text-red-600 text-sm"
+        >
+          Description is required (max 100 chars).
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block mb-1 text-lg font-medium text-gray-700"
+          >National ID <span class="text-red-500">*</span></label
+        >
+        <span
+          class="absolute top-[52%] left-2 mt-2 transform -translate-y-1/2 transition-all duration-300"
+          [class.left-3]="nidRef.invalid && complaintForm.submitted"
+          [ngClass]="{
+            'mt-2': !(titleRef.invalid && complaintForm.submitted),
+            'mt-0': titleRef.invalid && complaintForm.submitted
+          }"
+        >
+          <svg
+            class="h-5 w-5 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 7a4 4 0 01-8 0"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 14v7m0 0h6m-6 0H6"
+            />
+          </svg>
+        </span>
+        <input
+          name="nationalId"
+          [(ngModel)]="complaint.nationalId"
+          required
+          pattern="^\d{14}$"
+          #nidRef="ngModel"
+          class="w-full px-10 py-2 border border-[#2570EB] rounded-md outline-none placeholder-gray-400"
+          placeholder="Enter your National ID"
+        />
+        <div
+          *ngIf="nidRef.invalid && complaintForm.submitted"
+          class="text-red-600 text-sm mt-1"
+        >
+          National ID must be 14 digits.
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block mb-1 text-lg font-medium text-gray-700"
+          >Email <span class="text-red-500">*</span></label
+        >
+        <span
+          class="absolute inset-y-0 left-0 pl-3 flex items-center"
+          [ngClass]="{
+            'mt-5': !(titleRef.invalid && complaintForm.submitted),
+            'mt-0': titleRef.invalid && complaintForm.submitted
+          }"
+        >
+          <svg
+            class="h-5 w-5 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 12H8m8 0L12 16m4-4L12 8M4 4h16v16H4z"
+            />
+          </svg>
+        </span>
+        <input
+          name="email"
+          [(ngModel)]="complaint.email"
+          required
+          pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+          #emailRef="ngModel"
+          class="w-full px-10 py-2 border border-[#2570EB] rounded-md outline-none placeholder-gray-400"
+          placeholder="Enter your Email"
+        />
+        <div
+          *ngIf="emailRef.invalid && complaintForm.submitted"
+          class="text-red-600 text-sm"
+        >
+          Valid email is required.
+        </div>
+      </div>
+      <div class="relative">
+        <label class="block mb-1 text-lg font-medium text-gray-700"
+          >Location <span class="text-red-500">*</span></label
+        >
+        <span
+          class="absolute inset-y-0 left-0 pl-3 flex items-center"
+          [ngClass]="{
+            'mt-5': !(titleRef.invalid && complaintForm.submitted),
+            'mt-0': titleRef.invalid && complaintForm.submitted
+          }"
+        >
+          <svg
+            class="h-5 w-5 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3zM12 11v10"
+            />
+          </svg>
+        </span>
+        <input
+          name="location"
+          [(ngModel)]="complaint.location"
+          required
+          maxlength="99"
+          #locRef="ngModel"
+          class="w-full px-10 py-2 border border-[#2570EB] rounded-md outline-none placeholder-gray-400"
+          placeholder="Enter your Location"
+        />
+        <div
+          *ngIf="locRef.invalid && complaintForm.submitted"
+          class="text-red-600 text-sm"
+        >
+          Location is required (max 100 chars).
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="w-full font-bold bg-[#134995] text-white py-2 rounded-md hover:bg-blue-900 transition flex items-center justify-center"
+      >
+        <span *ngIf="!isSubmitting">Submit</span>
+        <span *ngIf="isSubmitting">
+          <svg
+            class="animate-spin h-5 w-5 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 000 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
+            ></path>
+          </svg>
+        </span>
+      </button>
+    </form>
+  </div>
+  <div
+    *ngIf="showSuccessPopup"
+    class="fixed inset-0 bg-opacity-30 flex items-center justify-center z-50"
+  >
+    <div
+      class="bg-white rounded-xl shadow-2xl w-[90%] max-w-md p-6 relative border-t-8 border-blue-600"
+    >
+      <!-- Close button -->
+      <button
+        (click)="closePopups()"
+        class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+      >
+        &times;
+      </button>
+      <div class="flex flex-col items-center text-center space-y-4">
+        <svg
+          class="w-14 h-14 text-blue-600"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 13l4 4L19 7" />
+        </svg>
+        <h2 class="text-2xl font-bold text-blue-800">
+          Complaint Submitted Successfully!
+        </h2>
+        <p class="text-gray-700 text-sm">
+          We received your complaint. Our team will reach out to you shortly.
+        </p>
+        <!-- Ticket Number -->
+        <div
+          class="bg-blue-50 text-blue-800 px-4 py-2 rounded-md shadow-sm text-sm font-semibold"
+        >
+          Ticket Number:{{ TiketNumber }}
+        </div>
+        <!-- OK Button -->
+        <button
+          (click)="pressme()"
+          class="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition-all duration-200"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    *ngIf="showErrorPopup"
+    class="fixed inset-0 flex items-center justify-center bg-opacity-50 z-50"
+  >
+    <div
+      class="bg-red-100 border border-red-400 text-red-800 rounded-lg shadow-lg p-6 max-w-sm w-full relative"
+    >
+      <button
+        (click)="closePopups()"
+        class="absolute top-2 right-2 text-red-800 hover:text-red-900 font-bold text-xl"
+      >
+        &times;
+      </button>
+      <div class="flex items-center gap-3">
+        <svg
+          class="w-8 h-8 text-red-600"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="12" />
+          <line x1="12" y1="16" x2="12" y2="16" />
+        </svg>
+        <div>
+          <h2 class="text-lg font-semibold">Something Went Wrong!</h2>
+          <p class="text-sm">Please try again later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

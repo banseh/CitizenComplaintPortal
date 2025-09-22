@@ -1,0 +1,137 @@
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+D:\iti_.net\Link Workshop\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Citizen Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.sourcelink.json
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Downloads\Citizen_Complaint\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\Recap APIs\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.sourcelink.json
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\Citizen_ComplaintV1\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.sourcelink.json
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\Finals\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\SOUQ COMPIUTER\OneDrive\Desktop\LastBansehBackend\One\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.sourcelink.json
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\FinalFinal\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.sourcelink.json
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+C:\Users\power\Desktop\Finals\CitizenPortal_link\Citizen ComplaintLastV3\Citizen ComplaintLastV2\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.deps.json
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.dll
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\bin\Debug\net8.0\Citizen Complaint.DAL.pdb
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.AssemblyReference.cache
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfoInputs.cache
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.AssemblyInfo.cs
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.csproj.CoreCompileInputs.cache
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.dll
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\refint\Citizen Complaint.DAL.dll
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\Citizen Complaint.DAL.pdb
+D:\LinkDiscussion\Citizen Complaint\Citizen Complaint.DAL\obj\Debug\net8.0\ref\Citizen Complaint.DAL.dll

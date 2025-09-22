@@ -1,0 +1,5 @@
+<app-header *ngIf="!hasToken && showNavbar"></app-header>
+<app-headerlog *ngIf="hasToken && showNavbar"></app-headerlog>
+<router-outlet></router-outlet>
+<br />
+<app-footer *ngIf="showNavbar"></app-footer>

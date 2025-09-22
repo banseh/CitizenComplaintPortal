@@ -1,0 +1,213 @@
+[
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CategoryController.CategoryController",
+    "Method": "GetContactInfoFromToken",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "DeleteComplaint",
+    "RelativePath": "api/Complaint/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "GetCaseById",
+    "RelativePath": "api/Complaint/case/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "GetCaseByTicketNumber",
+    "RelativePath": "api/Complaint/case/ticket/{ticketNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "GetCaseByTicketNumberAndEmail",
+    "RelativePath": "api/Complaint/case/ticketNumber/{ticketNumber}/email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "GetCasesByCustomer",
+    "RelativePath": "api/Complaint/cases/customer/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "SubmitAnonymousComplaint",
+    "RelativePath": "api/Complaint/submit-anonymous",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "complaintDto",
+        "Type": "Citizen_Complaint.BL.ComplaintDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.CpmplainController.ComplaintController",
+    "Method": "SubmitComplaint",
+    "RelativePath": "api/Complaint/SubmitComplaint",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "complaint",
+        "Type": "Citizen_Complaint.BL.ComplaintDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.ContactController.ContactController",
+    "Method": "VerifyToken",
+    "RelativePath": "api/Contact/contactidfromtoken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.ContactController.ContactController",
+    "Method": "GetContactInfoFromToken",
+    "RelativePath": "api/Contact/GetContactInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.LoginController.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "log",
+        "Type": "Citizen_Complaint.DAL.Models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.RegisterController.RegisterController",
+    "Method": "Redister",
+    "RelativePath": "api/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "register",
+        "Type": "Citizen_Complaint.DAL.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.RegisterController.RegisterController",
+    "Method": "ismailexistornot",
+    "RelativePath": "api/Register/cases/mailexist/{mail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Citizen_Complaint.Controllers.RegisterController.RegisterController",
+    "Method": "RegisterAsync",
+    "RelativePath": "api/Register/RegisterAcc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "register",
+        "Type": "Citizen_Complaint.DAL.Register",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

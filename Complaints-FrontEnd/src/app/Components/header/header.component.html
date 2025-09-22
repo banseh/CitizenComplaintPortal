@@ -1,0 +1,82 @@
+<header class="w-full bg-white shadow-md fixed z-100">
+  <div class="max-w-8xl mx-auto flex items-center justify-around py-4">
+    <div class="w-1/6 flex items-start gap-2 justify-center">
+      <img src="logo.svg" alt="Logo" class="w-6 h-6" />
+      <span class="text-blue-800 font-semibold text-lg">𝐘𝐨𝐮𝐫𝐕𝐨𝐢𝐜𝐞</span>
+    </div>
+    <nav
+      class="hidden lg:flex w-1/2 justify-center gap-6 text-blue-800 text-lg font-bold pl-30"
+    >
+      <a
+        *ngIf="!hasToken"
+        routerLink="/submitComplaint"
+        routerLinkActive="font-semibold border-b-2 border-blue-800 pb-1"
+        (click)="continueASAGuest()"
+        class="hover:text-blue-600"
+      >
+        Continue as a Guest
+      </a>
+      <a
+        *ngIf="hasToken"
+        routerLink="/profile"
+        routerLinkActive="font-semibold border-b-2 border-blue-800 pb-1"
+        class="hover:text-blue-600 flex items-center gap-2"
+      >
+        <img
+          src="defaltimage.svg"
+          alt="User Avatar"
+          class="w-10 h-8 rounded-full border border-gray-300 shadow-sm object-cover"
+        />
+        {{ name }}
+      </a>
+      <a
+        routerLink="/"
+        routerLinkActive="font-semibold border-b-2 border-blue-800 pb-1"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="reset()"
+        class="hover:text-blue-600"
+      >
+        Home
+      </a>
+      <a
+        routerLink="/about"
+        routerLinkActive="font-semibold border-b-2 border-blue-800 pb-1"
+        class="hover:text-blue-600"
+      >
+        About
+      </a>
+    </nav>
+    <div class="hidden lg:flex w-1/3 justify-center gap-2 mr-3">
+      <a routerLink="/login">
+        <button
+          class="bg-blue-800 text-white px-5 py-2 rounded-md text-sm font-bold hover:bg-blue-900 transition"
+        >
+          Login
+        </button>
+      </a>
+      <a routerLink="/register">
+        <button
+          class="border border-blue-800 text-blue-800 px-5 py-2 rounded-md text-sm font-bold hover:bg-blue-50 transition"
+        >
+          Sign Up
+        </button>
+      </a>
+    </div>
+    <button
+      (click)="toggleMenu()"
+      class="lg:hidden text-blue-800 focus:outline-none ml-2"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+</header>
